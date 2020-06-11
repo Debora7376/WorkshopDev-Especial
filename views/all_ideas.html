@@ -10,8 +10,9 @@
             <div class="description">
                 {{idea.description}}
             </div>
-            <a href="{{idea.link}}" target="_blank"> Ir para Ideias</a>
-            <form action="/ideias" method="POST" onsubmit="return deletaIdeia(event)">
+            <form action="/ideias" method="POST" onsubmit="return deletaIdeia(event)" class="frm-lista-ideia">
+                <a href="{{idea.link}}" target="_blank"> Ir para Ideias</a>
+
                 <input type="hidden" name="id" value="{{idea.id}}">
                 <button id="btn-deletar">Deletar</button>
             </form>

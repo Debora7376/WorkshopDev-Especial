@@ -26,14 +26,15 @@ body.hideScroll {
     overflow: hidden;
 }
 
-a {
+a, .frm-lista-ideia a {
     color: #ff5E84;
     font-weight: bold;
     text-decoration: none ;
 }
 
-a:hover {
+a:hover, .frm-lista-ideia a:hover,  #btn-deletar:hover {
     text-decoration: underline;
+    color: #ff5E84;
 }
 
 p, .description {
@@ -310,8 +311,28 @@ section#title, section#ideas, footer {
     color: #ff5E84;
     font-weight: bold;
     text-decoration: none ;
-} 
+    background: none ;
+    width: auto;
+    height: auto;
+    border-radius: none;
+    cursor: pointer;
+    margin-top: 0;
+    grid-column: none;
+    justify-self: normal;
+    transition: none;
+    float: right;
+}
 
-#btn-deletar:hover {
-    color: white
+.frm-lista-ideia {
+    width: 100%;
+    display: block;
+}
+
+.frm-lista-ideia a {
+    color: #ff5E84;
+    font-weight: bold;
+    text-decoration: none; 
+    width: auto;
+    height: auto;
+    display: inline-block;
 }
